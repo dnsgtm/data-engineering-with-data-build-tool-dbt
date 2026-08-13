@@ -32,7 +32,7 @@ jobs:
 
     - name: Run dbt Prod
       run: |
-        dbt debug
+        dbt debug --target prod
         dbt compile --target prod
         dbt run --target prod
 
